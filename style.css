@@ -35,12 +35,18 @@ h3 {
   width: 100%;
   height: 90px;
 }
-/* Header - menu */
-header {
+/* Layout CSS  */
+header,
+section,
+footer {
   width: 1152px;
   margin: auto;
+}
+/* ########## Header ########## */
+header {
   margin-top: 10px;
 }
+/* Header - menu */
 .menu {
   display: flex;
 }
@@ -85,8 +91,8 @@ nav {
   font-weight: 700;
 }
 .nav-menu li a:hover,
-.nav-my li a:hover{
-  color: #2292E9;
+.nav-my li a:hover {
+  color: #2292e9;
 }
 /* Header - search */
 .search {
@@ -96,7 +102,7 @@ nav {
   height: 120px;
   margin-top: 10px;
 }
-.seoul-slogan a{
+.seoul-slogan a {
   display: inline-block;
   width: 133px;
   height: 51px;
@@ -104,8 +110,8 @@ nav {
   background-size: cover;
   margin-top: 30px;
 }
-.search-box{
-  border: 3px solid #2292E9;
+.search-box {
+  border: 3px solid #2292e9;
   border-radius: 3px;
   position: absolute;
   top: 50%;
@@ -114,29 +120,29 @@ nav {
   width: 40%;
   height: 40px;
 }
-.search-box form{
+.search-box form {
   height: 100%;
 }
-.search-box form input[type=text]{
+.search-box form input[type="text"] {
   width: 80%;
   height: 100%;
   border: none;
   outline: none;
   padding-left: 10px;
 }
-.search-box form input[type=text]::placeholder{
-  color: #2292E9;
+.search-box form input[type="text"]::placeholder {
+  color: #2292e9;
   transition: 0.3s;
 }
-.search-box form input[type=text]:focus::placeholder{
+.search-box form input[type="text"]:focus::placeholder {
   opacity: 0;
 }
-.search-box > form > img{
+.search-box > form > img {
   margin-left: 20px;
   vertical-align: middle;
   cursor: pointer;
 }
-.search-box > form > button{
+.search-box > form > button {
   width: 35px;
   height: 35px;
   border: none;
@@ -145,8 +151,8 @@ nav {
   padding: 0;
   cursor: pointer;
 }
-.site-lang{
-  border: 1px solid #1E6CB3;
+.site-lang {
+  border: 1px solid #1e6cb3;
   position: absolute;
   top: 0;
   right: 0;
@@ -154,36 +160,36 @@ nav {
   height: 21px;
   display: flex;
 }
-.site-lang select{
+.site-lang select {
   float: left;
   width: 80px;
   height: 100%;
   border: none;
-  color: #1E6CB3;
+  color: #1e6cb3;
   font-size: 12px;
   outline: none;
 }
-.site-lang input[type=button]{
+.site-lang input[type="button"] {
   display: inline-block;
   width: 30px;
   height: 100%;
   padding: 0;
   border: none;
-  background-color: #1E6CB3;
+  background-color: #1e6cb3;
   color: #fff;
   font-size: 11px;
 }
-.weather-brand{
+.weather-brand {
   display: flex;
   position: absolute;
   top: 40px;
   right: 0;
 }
-.weather-box{
+.weather-box {
   margin-right: 40px;
   display: flex;
 }
-.weather-img a{
+.weather-img a {
   display: inline-block;
   width: 45px;
   height: 45px;
@@ -191,29 +197,130 @@ nav {
   background-size: cover;
   margin-right: 15px;
 }
-.weather-text p:nth-of-type(1){
-  margin-bottom: 5px
+.weather-text p:nth-of-type(1) {
+  margin-bottom: 5px;
 }
-.weather-text p:nth-of-type(1) a strong{
+.weather-text p:nth-of-type(1) a strong {
   font-size: 25px;
   font-weight: 700;
 }
-.weather-text p:nth-of-type(1) a span{
+.weather-text p:nth-of-type(1) a span {
   font-size: 16px;
   margin-left: 20px;
 }
-.weather-text p:nth-of-type(2) a span{
+.weather-text p:nth-of-type(2) a span {
   font-size: 13px;
 }
-.weather-text p:nth-of-type(2) a span em{
+.weather-text p:nth-of-type(2) a span em {
   font-style: normal;
   font-size: 14px;
   color: #c35c3c;
 }
-.new-brand a{
+.new-brand a {
   display: inline-block;
   width: 74px;
   height: 47px;
   background: url(/images/seoul-brand.png) no-repeat center center;
   background-size: cover;
+}
+/* ########## Main ########## */
+
+/* Main - 주요서비스 */
+.service-title {
+  display: flex;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #dbdbdb;
+  margin-bottom: 20px;
+}
+.service-title h2 {
+  font-size: 24px;
+  font-weight: 700;
+}
+.service-title a {
+  width: 112px;
+  height: 29px;
+  border: 1px solid #ddd;
+  font-size: 15px;
+  text-align: center;
+  line-height: 29px;
+  margin-left: 25px;
+  padding-right: 10px;
+}
+.service-contents ul {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.service-contents ul li {
+  text-align: center;
+  width: auto;
+  height: 90px;
+}
+.service-contents ul li a {
+  display: block;
+  font-size: 15px;
+  text-align: center;
+}
+.service-contents ul li a i {
+  display: block;
+  width: 60px;
+  height: 60px;
+  background: url(/images/icon_set_service_202403.png) no-repeat;
+  margin: 0 auto 5px;
+}
+/* 주요 서비스 아이콘 레이아웃 */
+.service-contents ul li a i.ms01{
+  background-position: -360px 0;
+}
+.service-contents ul li a i.ms02{
+  background-position: 0 0;
+}
+.service-contents ul li a i.ms03{
+  background-position: -120px 0;
+}
+.service-contents ul li a i.ms04{
+  background-position: -300px 0;
+}
+.service-contents ul li a i.ms05{
+  background-position: -180px 0;
+}
+.service-contents ul li a i.ms06{
+  background-position: -960px 0;
+}
+.service-contents ul li a i.ms07{
+  background-position: -780px 0;
+}
+.service-contents ul li a i.ms08{
+  background-position: -1140px 0;
+}
+.service-contents ul li a i.ms09{
+  background-position: -1020px 0;
+}
+.service-contents ul li a i.ms10{
+  background-position: -60px 0;
+}
+.service-contents ul li a i.ms11{
+  background-position: -1200px 0;
+}
+.service-contents ul li a i.ms12{
+  background-position: -600px 0;
+}
+/* Main - aside */
+aside {
+  width: 100%;
+  background-color: #EFF4F8;
+  margin: 20px 0;
+}
+aside ul{
+  width: 1152px;
+  margin: auto;
+  display: flex;
+}
+aside ul li{
+  padding: 20px 0;
+}
+aside ul li:not(:first-child) a img{
+  border-left: 1px solid #bbb;
+  width: 230px;
+  height: 70px;
 }

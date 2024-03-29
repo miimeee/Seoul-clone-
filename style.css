@@ -37,7 +37,7 @@ h3 {
 }
 /* Layout CSS  */
 header,
-section,
+section.wrap,
 footer {
   width: 1152px;
   margin: auto;
@@ -269,58 +269,186 @@ nav {
   margin: 0 auto 5px;
 }
 /* 주요 서비스 아이콘 레이아웃 */
-.service-contents ul li a i.ms01{
+.service-contents ul li a i.ms01 {
   background-position: -360px 0;
 }
-.service-contents ul li a i.ms02{
+.service-contents ul li a i.ms02 {
   background-position: 0 0;
 }
-.service-contents ul li a i.ms03{
+.service-contents ul li a i.ms03 {
   background-position: -120px 0;
 }
-.service-contents ul li a i.ms04{
+.service-contents ul li a i.ms04 {
   background-position: -300px 0;
 }
-.service-contents ul li a i.ms05{
+.service-contents ul li a i.ms05 {
   background-position: -180px 0;
 }
-.service-contents ul li a i.ms06{
+.service-contents ul li a i.ms06 {
   background-position: -960px 0;
 }
-.service-contents ul li a i.ms07{
+.service-contents ul li a i.ms07 {
   background-position: -780px 0;
 }
-.service-contents ul li a i.ms08{
+.service-contents ul li a i.ms08 {
   background-position: -1140px 0;
 }
-.service-contents ul li a i.ms09{
+.service-contents ul li a i.ms09 {
   background-position: -1020px 0;
 }
-.service-contents ul li a i.ms10{
+.service-contents ul li a i.ms10 {
   background-position: -60px 0;
 }
-.service-contents ul li a i.ms11{
+.service-contents ul li a i.ms11 {
   background-position: -1200px 0;
 }
-.service-contents ul li a i.ms12{
+.service-contents ul li a i.ms12 {
   background-position: -600px 0;
 }
 /* Main - aside */
 aside {
   width: 100%;
-  background-color: #EFF4F8;
+  background-color: #eff4f8;
   margin: 20px 0;
 }
-aside ul{
+aside ul {
   width: 1152px;
   margin: auto;
   display: flex;
 }
-aside ul li{
+aside ul li {
   padding: 20px 0;
 }
-aside ul li:not(:first-child) a img{
+aside ul li:not(:first-child) a img {
   border-left: 1px solid #bbb;
   width: 230px;
   height: 70px;
+}
+/* Main - inner01(common) */
+.inner01 {
+  width: 100%;
+  overflow: hidden;
+  padding: 40px 0 40px;
+  border-bottom: 2px solid #222;
+}
+.inner01 > div {
+  float: left;
+  width: 360px;
+}
+.inner01 > div > h2 {
+  font-size: 24px;
+  font-weight: 700;
+  border-bottom: 2px solid #dbdbdb;
+  padding-bottom: 7px;
+  margin-bottom: 10px;
+}
+.inner01 > div:last-of-type > h2 {
+  border: none;
+}
+.event > ul > li,
+.fesival > ul > li {
+  padding: 5px 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.event > ul > li > b,
+.fesival > ul > li > b {
+  font-weight: normal;
+  font-size: 15px;
+  margin-right: 10px;
+}
+b.welfare {
+  color: #d76000;
+}
+b.economy {
+  color: #069363;
+}
+b.environment {
+  color: #599100;
+}
+b.culture {
+  color: #9b64d3;
+}
+b.administration {
+  color: #028ab6;
+}
+.event > ul > li > a,
+.fesival > ul > li > a,
+.like-service > ul > li > a {
+  font-size: 14px;
+}
+/* Main - inner01(festival) */
+.fesival {
+  margin: 0 35px;
+}
+/* Main - inner01(like service) */
+.like-service ul {
+  border: 1px solid #000;
+}
+.like-service ul li {
+  width: 50%;
+  float: left;
+  padding: 0 0 10px 10px;
+  position: relative;
+}
+.like-service ul li::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  margin-top: -7px;
+  background: #666666;
+  width: 2px;
+  height: 2px;
+}
+/* Main - inner02 */
+.inner02 {
+  width: 100%;
+  padding-top: 40px;
+}
+.inner02 h2 {
+  font-size: 24px;
+  font-weight: 700;
+}
+.info {
+  width: 100%;
+  overflow: hidden;
+  margin-top: 20px;
+}
+.info li {
+  float: left;
+  width: 85px;
+  text-align: center;
+  margin: 0 29px;
+}
+li.icon-house {
+  background: url(/images/info_icon_house.png) no-repeat;
+}
+li.icon-economy {
+  background: url(/images/info_icon_economy.png) no-repeat;
+}
+li.icon-traffic {
+  background: url(/images/info_icon_traffic.png) no-repeat;
+}
+li.icon-environment {
+  background: url(/images/info_icon_environment.png) no-repeat;
+}
+li.icon-welfare {
+  background: url(/images/info_icon_welfare.png) no-repeat;
+}
+li.icon-safty {
+  background: url(/images/info_icon_safty.png) no-repeat;
+}
+li.icon-culture {
+  background: url(/images/info_icon_culture.png) no-repeat;
+}
+li.icon-administration {
+  background: url(/images/info_icon_administration.png) no-repeat;
+}
+.info li a {
+  font-size: 16px;
+  display: inline-block;
+  /* padding으로 늘려서 a로 보이게함 */
+  padding-top: 100px;
 }

@@ -1,0 +1,219 @@
+@import url("https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap");
+
+/* Default */
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  font-family: "Nanum Gothic", sans-serif;
+  font-weight: 400;
+  color: #222222;
+}
+a {
+  color: #000;
+  text-decoration: none;
+}
+ul,
+ol,
+li {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+p,
+h1,
+h2,
+h3 {
+  margin: 0;
+  font-weight: normal;
+}
+/* Pop */
+.pop {
+  background: url(/images/pop-image.jpg) no-repeat center center;
+  background-size: cover;
+  width: 100%;
+  height: 90px;
+}
+/* Header - menu */
+header {
+  width: 1152px;
+  margin: auto;
+  margin-top: 10px;
+}
+.menu {
+  display: flex;
+}
+.seoul-logo a {
+  display: inline-block;
+  width: 105px;
+  height: 27px;
+  background: url(/images/seoul-logo02.png) no-repeat center center;
+  background-size: cover;
+}
+nav {
+  display: flex;
+  position: relative;
+  width: 100%;
+  margin-top: 5px;
+}
+.nav-menu {
+  display: flex;
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin-left: 40px;
+}
+.nav-menu li {
+  margin: 0 10px;
+}
+.nav-menu li a {
+  font-size: 16px;
+  font-weight: 700;
+}
+.nav-my {
+  display: flex;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.nav-my li {
+  margin: 0 10px;
+}
+.nav-my li a {
+  font-size: 14px;
+  font-weight: 700;
+}
+.nav-menu li a:hover,
+.nav-my li a:hover{
+  color: #2292E9;
+}
+/* Header - search */
+.search {
+  display: flex;
+  position: relative;
+  width: 100%;
+  height: 120px;
+  margin-top: 10px;
+}
+.seoul-slogan a{
+  display: inline-block;
+  width: 133px;
+  height: 51px;
+  background: url(/images/seoul-slogan.png) no-repeat center center;
+  background-size: cover;
+  margin-top: 30px;
+}
+.search-box{
+  border: 3px solid #2292E9;
+  border-radius: 3px;
+  position: absolute;
+  top: 50%;
+  left: 40%;
+  transform: translate(-40%, -50%);
+  width: 40%;
+  height: 40px;
+}
+.search-box form{
+  height: 100%;
+}
+.search-box form input[type=text]{
+  width: 80%;
+  height: 100%;
+  border: none;
+  outline: none;
+  padding-left: 10px;
+}
+.search-box form input[type=text]::placeholder{
+  color: #2292E9;
+  transition: 0.3s;
+}
+.search-box form input[type=text]:focus::placeholder{
+  opacity: 0;
+}
+.search-box > form > img{
+  margin-left: 20px;
+  vertical-align: middle;
+  cursor: pointer;
+}
+.search-box > form > button{
+  width: 35px;
+  height: 35px;
+  border: none;
+  background: url(/images/icon_set_common.png) no-repeat -32px -97px;
+  float: right;
+  padding: 0;
+  cursor: pointer;
+}
+.site-lang{
+  border: 1px solid #1E6CB3;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 110px;
+  height: 21px;
+  display: flex;
+}
+.site-lang select{
+  float: left;
+  width: 80px;
+  height: 100%;
+  border: none;
+  color: #1E6CB3;
+  font-size: 12px;
+  outline: none;
+}
+.site-lang input[type=button]{
+  display: inline-block;
+  width: 30px;
+  height: 100%;
+  padding: 0;
+  border: none;
+  background-color: #1E6CB3;
+  color: #fff;
+  font-size: 11px;
+}
+.weather-brand{
+  display: flex;
+  position: absolute;
+  top: 40px;
+  right: 0;
+}
+.weather-box{
+  margin-right: 40px;
+  display: flex;
+}
+.weather-img a{
+  display: inline-block;
+  width: 45px;
+  height: 45px;
+  background: url(/images/weathericon_d3.png) no-repeat;
+  background-size: cover;
+  margin-right: 15px;
+}
+.weather-text p:nth-of-type(1){
+  margin-bottom: 5px
+}
+.weather-text p:nth-of-type(1) a strong{
+  font-size: 25px;
+  font-weight: 700;
+}
+.weather-text p:nth-of-type(1) a span{
+  font-size: 16px;
+  margin-left: 20px;
+}
+.weather-text p:nth-of-type(2) a span{
+  font-size: 13px;
+}
+.weather-text p:nth-of-type(2) a span em{
+  font-style: normal;
+  font-size: 14px;
+  color: #c35c3c;
+}
+.new-brand a{
+  display: inline-block;
+  width: 74px;
+  height: 47px;
+  background: url(/images/seoul-brand.png) no-repeat center center;
+  background-size: cover;
+}

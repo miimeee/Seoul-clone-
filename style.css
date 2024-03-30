@@ -671,3 +671,32 @@ h3.administration{
 .seoul-sns-list li:nth-of-type(7) a{
   background-position: -240px 0;
 }
+/* Main - inner05(슬라이드배너) */
+.inner05{
+  width: 100%;
+  padding-top: 40px;
+}
+.slide-container{
+  border: 1px solid orange;
+}
+.slide-box{
+  border: 1px solid red;
+  width: 100%;
+  height: 122px;
+  overflow: hidden;
+}
+.slide-images{
+  width: 700%;
+}
+.slide-images li{
+  float: left;
+  margin-right: 42px;
+}
+.slide-images li a{}
+.slide-images li a img{
+  width: 355px;
+  height: 122px;
+}
+.slide-control{
+  border: 1px solid #000;
+}

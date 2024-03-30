@@ -679,14 +679,18 @@ h3.administration{
 .slide-container{
   border: 1px solid orange;
 }
-.slide-box{
+.slide-image-box{
   border: 1px solid red;
   width: 100%;
   height: 122px;
-  overflow: hidden;
+  /* overflow: hidden; */
+  position: relative;
 }
 .slide-images{
-  width: 700%;
+  width: 2779px;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 .slide-images li{
   float: left;
@@ -697,6 +701,36 @@ h3.administration{
   width: 355px;
   height: 122px;
 }
-.slide-control{
+.slide-control-box{
   border: 1px solid #000;
+  display: flex;
+  position: relative;
+  width: 100%;
+  height: 32px;
+}
+.slide-count{
+  position: absolute;
+  top: 0;
+  right: 70px;
+}
+.slide-number{}
+.slide-btn{
+  position: absolute;
+  top: 0;
+  right: 0;
+  border: 1px solid #999;
+}
+.prev-btn,
+.stop-btn,
+.next-btn{
+  width: 20px;
+  height: 20px;
+  border: none;
+  color: #222;
+  background-color: #fff;
+}
+.prev-btn,
+.stop-btn{
+  margin-right: -4px;
+  border-right: 1px solid #999;
 }

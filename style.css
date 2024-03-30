@@ -21,6 +21,7 @@ li {
   padding: 0;
   margin: 0;
 }
+b,
 p,
 h1,
 h2,
@@ -354,7 +355,6 @@ aside ul li:not(:first-child) a img {
 }
 .event > ul > li > b,
 .fesival > ul > li > b {
-  font-weight: normal;
   font-size: 15px;
   margin-right: 10px;
 }
@@ -487,6 +487,7 @@ li.icon-administration {
   color: #fff;
   position: absolute;
   top: 154px;
+  z-index: 100;
 }
 h3.only{
   display: none;
@@ -514,9 +515,14 @@ h3.administration{
   width: 100%;
   height: 188px;
   margin-bottom: 15px;
+  overflow: hidden;
+}
+.new-issue-img:hover > img{
+  transform: scale(1.1);
 }
 .new-issue-img > img {
   width: auto;
+  transition: 0.35s;
 }
 .new-issue-caption {
   font-size: 15px;
@@ -540,4 +546,128 @@ h3.administration{
   width: 100%;
   font-size: 15px;
   color: #7d7d7d;
+}
+/* Main - inner04 */
+.inner04{
+  width: 100%;
+  padding: 20px 0 30px;
+  border-bottom: 2px solid #222;
+  overflow: hidden;
+}
+.inner04 > div{
+  float: left;
+}
+.seoul-video h2,
+.seoul-issue h2,
+.seoul-sns h2{
+  font-size: 24px;
+  font-weight: 700;
+  padding-bottom: 15px;
+}
+/* Main - inner04(서울영상) */
+.video-box{
+  position: relative;
+  width: 280px;
+  height: 152px;
+  overflow: hidden;
+}
+.video-box a img{
+  width: 100%;
+  height: 100%;
+  transition: 0.3s;
+}
+.video-box:hover img{
+  transform: scale(1.1);
+}
+.video-box a p{
+  width: 100%;
+  text-align: center;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 700;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 5px 0;
+  z-index: 100;
+}
+/* Main - inner04(서울소식) */
+.seoul-issue{
+  margin: 0 20px;
+}
+.seoul-issue-contents{
+  width: 480px;
+  height: 152px;
+}
+.seoul-issue-contents li{
+  font-size: 16px;
+  width: 100%;
+  padding: 10px 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.seoul-issue-contents li a b{
+  color: #09ac43;
+  margin-right: 10px;
+}
+/* Main - inner04(서울SNS) */
+.seoul-sns{
+  width: 350px;
+  height: 195px;
+  background: url(/images/sns-list-bg.gif) no-repeat center center;
+  position: relative;
+}
+.seoul-sns a{
+  display: block;
+  padding: 10px 15px;
+  position: relative;
+}
+.seoul-sns h2{
+  display: inline-block;
+}
+.seoul-sns p{
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  font-size: 15px;
+  font-weight: 600;
+  color:#7d7d7d;
+}
+.seoul-sns-list{
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.seoul-sns-list li a{
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  background: url(/images/sns-list.png) no-repeat;
+  margin: 0 2px;
+}
+.seoul-sns-list li:nth-of-type(1) a{
+  background-position: -40px 0;
+}
+.seoul-sns-list li:nth-of-type(2) a{
+  background-position: 0 0;
+}
+.seoul-sns-list li:nth-of-type(3) a{
+  background-position: -160px 0;
+}
+.seoul-sns-list li:nth-of-type(4) a{
+  background-position: -80px 0;
+}
+.seoul-sns-list li:nth-of-type(5) a{
+  background-position: -120px 0;
+}
+.seoul-sns-list li:nth-of-type(6) a{
+  background-position: -200px 0;
+}
+.seoul-sns-list li:nth-of-type(7) a{
+  background-position: -240px 0;
 }

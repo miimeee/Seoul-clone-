@@ -42,7 +42,7 @@ footer {
   width: 1152px;
   margin: auto;
 }
-/* ########## Header ########## */
+/* ############### Header ############### */
 header {
   margin-top: 10px;
 }
@@ -223,7 +223,7 @@ nav {
   background: url(/images/seoul-brand.png) no-repeat center center;
   background-size: cover;
 }
-/* ########## Main ########## */
+/* ############### Main ############### */
 
 /* Main - 주요서비스 */
 .service-title {
@@ -402,7 +402,7 @@ b.administration {
   width: 2px;
   height: 2px;
 }
-/* Main - inner02 */
+/* Main - inner02(분야별 정보) */
 .inner02 {
   width: 100%;
   padding-top: 40px;
@@ -451,4 +451,93 @@ li.icon-administration {
   display: inline-block;
   /* padding으로 늘려서 a로 보이게함 */
   padding-top: 100px;
+}
+/* Main - inner03(새소식) */
+.inner03 {
+  width: 100%;
+  padding-top: 40px;
+  position: relative;
+}
+.inner03 h2 {
+  font-size: 24px;
+  font-weight: 700;
+}
+.new-issue-container {
+  margin-top: 20px;
+  width: 100%;
+  overflow: hidden;
+}
+.new-issue-container > div {
+  float: left;
+  width: 272px;
+  margin-left: 20px;
+  position: relative;
+}
+.new-issue-container > div:nth-of-type(1),
+.new-issue-container > div:nth-of-type(5) {
+  margin-left: 0;
+}
+.new-issue-container > div > h3 {
+  font-size: 14px;
+  font-weight: 700;
+  width: 85px;
+  height: 35px;
+  text-align: center;
+  line-height: 35px;
+  color: #fff;
+  position: absolute;
+  top: 154px;
+}
+h3.only{
+  display: none;
+}
+h3.welfare{
+  background-color: #D76000;
+}
+h3.environment{
+  background-color: #599100;
+}
+h3.home{
+  background-color: #C35C3C;
+}
+h3.economy{
+  background-color: #069363;
+}
+h3.administration{
+  background-color: #028AB6;
+}
+.new-issue-container > div > a {
+  display: block;
+  width: 100%;
+}
+.new-issue-img {
+  width: 100%;
+  height: 188px;
+  margin-bottom: 15px;
+}
+.new-issue-img > img {
+  width: auto;
+}
+.new-issue-caption {
+  font-size: 15px;
+  width: 100%;
+  height: 3em;
+  line-height: 1.5em;
+  text-overflow: ellipsis;
+  white-space: normal; 
+  word-wrap: normal; 
+  word-break: keep-all; 
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+.new-issue-all{
+  position: absolute;
+  top: 60px;
+  right: 0;
+}
+.new-issue-all a{
+  display: inline-block;
+  width: 100%;
+  font-size: 15px;
+  color: #7d7d7d;
 }

@@ -338,6 +338,7 @@ aside ul li:not(:first-child) a img {
 .inner01 > div {
   float: left;
   width: 360px;
+  position: relative;
 }
 .inner01 > div > h2 {
   font-size: 24px;
@@ -348,16 +349,33 @@ aside ul li:not(:first-child) a img {
 }
 .inner01 > div:last-of-type > h2 {
   border: none;
+  margin-bottom: 0;
+}
+.event h2::after, 
+.festival h2::after{
+  content: '\e914';
+  font-family: xeicon;
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  border: 1px solid #dbdbdb;
+  font-size: 18px;
+  color: #222;
+  text-align: center;
+  line-height: 18px;
+  position: absolute;
+  right: 0;
+  top: 5px;
 }
 .event > ul > li,
-.fesival > ul > li {
+.festival > ul > li {
   padding: 5px 0;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
 }
 .event > ul > li > b,
-.fesival > ul > li > b {
+.festival > ul > li > b {
   font-size: 15px;
   margin-right: 10px;
 }
@@ -377,22 +395,24 @@ b.administration {
   color: #028ab6;
 }
 .event > ul > li > a,
-.fesival > ul > li > a,
+.festival > ul > li > a,
 .like-service > ul > li > a {
   font-size: 14px;
 }
 /* Main - inner01(festival) */
-.fesival {
+.festival {
   margin: 0 35px;
 }
 /* Main - inner01(like service) */
 .like-service ul {
-  border: 1px solid #000;
+  overflow: hidden;
+  background-color: #EFF4F8;
+  padding: 15px 0 15px 20px;
 }
 .like-service ul li {
   width: 50%;
   float: left;
-  padding: 0 0 10px 10px;
+  padding: 0 0 8px 10px;
   position: relative;
 }
 .like-service ul li::before {
@@ -775,8 +795,11 @@ h3.administration {
   /* .active의 transform적용시키기 위해서 
   인라인 요소인경우 적용이 안됨*/
   display: inline-block;
+  transition: 0.3s;
 }
-
+.site-list > li > button.only-name > span::after{
+  display: none;
+}
 /* 펼치면 나오는 부분 */
 .site-list-box {
   display: none;
@@ -791,8 +814,6 @@ h3.administration {
   z-index: 1000;
   transition: 0.35s;
 }
-.site-list-box > ul {
-}
 .site-list-box > ul > li {
   float: left;
   width: 25%;
@@ -801,6 +822,9 @@ h3.administration {
 /* 클릭이벤트CSS */
 .site-list > li > button.active {
   background-color: #e2e2e2;
+}
+.site-list > li > button.only-name.active{
+  background-color: #f7f7f7;
 }
 .site-list > li > button.active > span::after {
   transform: rotate(180deg);
@@ -844,6 +868,7 @@ h3.administration {
 .footer-info {
   position: relative;
   padding: 20px 0 30px;
+  border-top: 2px solid #d0d0d0;
 }
 .footer-info span {
   float: left;

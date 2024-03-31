@@ -228,6 +228,84 @@ nav {
   background-size: cover;
 }
 /* ############### Main ############### */
+/* Main - main issue */
+.main-issue {
+  border: 1px solid #000;
+  overflow: hidden;
+}
+/* Main - main issue(주요뉴스 & 시민참여) */
+.issue-area {
+  float: left;
+}
+/* Main - main issue(시장님) */
+.mayor-area {
+  float: right;
+  width: 360px;
+  height: 350px;
+}
+.mayor-news {
+  height: 190px;
+  background: url(/images/MAYORNEWS_20240327111132_61798.jpg) no-repeat center
+    center;
+  background-size: cover;
+  position: relative;
+}
+.mayor-news a {
+  /* a늘리기 */
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.mayor-news a span {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 40px;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: #fff;
+  text-align: center;
+  line-height: 40px;
+  font-size: 14px;
+  font-weight: 700;
+}
+.mayor-page {
+  margin: 10px 0;
+  position: relative;
+  width: 100%;
+  height: 90px;
+}
+.page-bg,
+.page-hope,
+.page-list {
+  position: absolute;
+}
+.page-hope {
+  top: 13px;
+  right: 5px;
+}
+div.page-list {
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  justify-content: space-between;
+}
+div.page-list > a {
+  padding: 5px 15px;
+  background-color: #8b7153;
+  display: inline-block;
+  width: 100%;
+  border-right: 1px solid #fff;
+  text-align: center;
+}
+div.page-list > a:last-child{
+  border: none;
+}
+.mayor-kakao {
+  background-color: #eed925;
+  padding: 5px 10px;
+}
 
 /* Main - 주요서비스 */
 .service-title {
@@ -351,9 +429,9 @@ aside ul li:not(:first-child) a img {
   border: none;
   margin-bottom: 0;
 }
-.event h2::after, 
-.festival h2::after{
-  content: '\e914';
+.event h2::after,
+.festival h2::after {
+  content: "\e914";
   font-family: xeicon;
   display: inline-block;
   width: 18px;
@@ -406,7 +484,7 @@ b.administration {
 /* Main - inner01(like service) */
 .like-service ul {
   overflow: hidden;
-  background-color: #EFF4F8;
+  background-color: #eff4f8;
   padding: 15px 0 15px 20px;
 }
 .like-service ul li {
@@ -797,7 +875,7 @@ h3.administration {
   display: inline-block;
   transition: 0.3s;
 }
-.site-list > li > button.only-name > span::after{
+.site-list > li > button.only-name > span::after {
   display: none;
 }
 /* 펼치면 나오는 부분 */
@@ -823,7 +901,7 @@ h3.administration {
 .site-list > li > button.active {
   background-color: #e2e2e2;
 }
-.site-list > li > button.only-name.active{
+.site-list > li > button.only-name.active {
   background-color: #f7f7f7;
 }
 .site-list > li > button.active > span::after {

@@ -235,8 +235,93 @@ nav {
 }
 /* Main - main issue(주요뉴스 & 시민참여) */
 .issue-area {
+  border: 1px solid red;
+  float: left;
+  width: 770px;
+  height: 350px;
+  overflow: hidden;
+}
+
+.main-issue-slide01{
+  width: 100%;
+  height: 100%;
+}
+
+.issue-slide-title{
   float: left;
 }
+.issue-slide-title h3{
+  border: 1px solid #000;
+  width: 80px;
+  height: 175px;
+  background-color: #0158a8;
+}
+.issue-slide-title h3 a{
+  border: 1px solid #000;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 600;
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  padding-top: 50px;
+}
+.issue-slide-title h3 a i{
+  display: block;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: #fff url(/images/icon_main_2019\ 1.png) no-repeat;
+  background-size: cover;
+  margin: 0 auto 8px;
+}
+
+.issue-slide-contents{}
+.contents-wrap{}
+.contents-wrap-inner{}
+.contents-wrap-inner ul{
+  width: 6215%;
+}
+.contents-wrap-inner ul li{
+  float: left;
+  width: 690px;
+  position: relative;
+}
+.contents-wrap-inner ul li a{
+  width: 100%;
+}
+.contents-wrap-inner ul li a img{
+  width: 100%;
+}
+.contents-wrap-inner ul li a p{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 40px;
+  background-color: rgb(0, 0, 0, 0.7);
+  color: #fff;
+  line-height: 40px;
+  font-size: 14px;
+  padding-left: 10px;
+}
+
+.contents-control{}
+button.contents-all-btn{}
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* Main - main issue(시장님) */
 .mayor-area {
   float: right;

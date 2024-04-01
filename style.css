@@ -306,21 +306,8 @@ nav {
   font-size: 14px;
   padding-left: 10px;
 }
-
 .contents-control{}
 button.contents-all-btn{}
-
-
-
-
-
-
-
-
-
-
-
-
 
 /* Main - main issue(시장님) */
 .mayor-area {
@@ -355,7 +342,7 @@ button.contents-all-btn{}
   font-weight: 700;
 }
 .mayor-page {
-  margin: 10px 0;
+  margin: 15px 0;
   position: relative;
   width: 100%;
   height: 90px;
@@ -862,11 +849,8 @@ h3.administration {
   width: 100%;
   padding-top: 40px;
 }
-.slide-container {
-  border: 1px solid orange;
-}
+.slide-container {}
 .slide-image-box {
-  border: 1px solid red;
   width: 100%;
   height: 122px;
   /* overflow: hidden; */
@@ -876,7 +860,7 @@ h3.administration {
   width: 2779px;
   position: absolute;
   top: 0;
-  left: 0;
+  left: 0;  /*NOTE - 값이 바뀌는 부분*/
 }
 .slide-images li {
   float: left;

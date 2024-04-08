@@ -235,28 +235,43 @@ nav {
 }
 /* Main - main issue(주요뉴스 & 시민참여) */
 .issue-area {
-  border: 1px solid red;
   float: left;
   width: 770px;
   height: 350px;
   overflow: hidden;
+  position: relative;
 }
-
-.main-issue-slide01 {
-  width: 100%;
-  height: 100%;
+.main-issue-slide02 {
+  position: absolute;
+  top: 0;
+  left: 0;
 }
-
-.issue-slide-title {
+.issue-slide01-title,
+.issue-slide02-title {
   float: left;
 }
-.issue-slide-title h3 {
-  border: 1px solid #000;
+.issue-slide01-title h3,
+.issue-slide02-title h3 {
   width: 80px;
   height: 175px;
+  background-color: #d2e1e9;
+  position: absolute;
+}
+.issue-slide01-title h3 {
+  top: 0;
+  left: 0;
+}
+.issue-slide02-title h3 {
+  top: 175px;
+  left: 0;
+}
+.issue-slide01-title.active h3,
+.issue-slide02-title.active h3 {
   background-color: #0158a8;
 }
-.issue-slide-title h3 a {
+
+.issue-slide01-title h3 a,
+.issue-slide02-title h3 a {
   border: 1px solid #000;
   color: #fff;
   font-size: 14px;
@@ -267,7 +282,8 @@ nav {
   text-align: center;
   padding-top: 50px;
 }
-.issue-slide-title h3 a i {
+.issue-slide01-title h3 a i,
+.issue-slide02-title h3 a i {
   display: block;
   width: 50px;
   height: 50px;
@@ -276,8 +292,14 @@ nav {
   background-size: cover;
   margin: 0 auto 8px;
 }
+.issue-slide02-title h3 a i {
+  background: #fff url(/images/icon_main_2019\ 2.png) no-repeat;
+  background-size: cover;
+}
 
-.issue-slide-contents {
+.issue-slide01-contents,
+.issue-slide02-contents {
+  margin-left: 80px;
 }
 .contents-wrap {
 }
@@ -390,6 +412,7 @@ div.page-list > a:last-child {
   padding-bottom: 15px;
   border-bottom: 1px solid #dbdbdb;
   margin-bottom: 20px;
+  margin-top: 30px;
 }
 .service-title h2 {
   font-size: 24px;
@@ -907,7 +930,7 @@ h3.administration {
   border-right: 1px solid #999;
 }
 .stop-btn.on,
-.play-btn.on{
+.play-btn.on {
   display: none;
 }
 /* Main - inner06(관련사이트) */

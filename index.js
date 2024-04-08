@@ -1,35 +1,29 @@
 $(function () {
   // 슬라이드 배너
-  // function bannerSlide() {
-  //   $(".slide-images").animate({ left: "-2779px" }, 2500, function () {
-  //     $(".slide-images").css({ left: "-397px" });
-  //     $(".slide-images > li:first-child").insertAfter(".slide-images > li:last-child")
-  //   });
-  // }
-  // setInterval(bannerSlide, 10000);
+  $(".slide-images").slick({
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 1500,
+    prevArrow: $(".prev-btn"),
+    nextArrow: $(".next-btn"),
+  });
 
-  let first = 0;
-  let maxWidth = -2779;
-  let moveWidth = -397;
+  $(".slide-images").on("afterChange", function (event, slick, currentSlide) {
+    $(".slide-number p").text(currentSlide + 1);
+  });
 
-  function nextBtn() {
-    first += moveWidth;
-    if (first <= maxWidth) {
-      first = 0;
-    }
-    $(".slide-images").css({ left: first + "px" });
-  }
+  $(".stop-btn").click(function () {
+    $(".slide-images").slick("slickPause");
+    $(this).addClass("on");
+    $(this).siblings(".play-btn").removeClass("on");
+  });
 
-  function prevBtn() {
-    first -= moveWidth;
-    if (first > 0) {
-      first = maxWidth - moveWidth;
-    }
-    $(".slide-images").css({ left: first + "px" });
-  }
-
-  $(".next-btn").click(nextBtn);
-  $(".prev-btn").click(prevBtn);
+  $(".play-btn").click(function () {
+    $(".slide-images").slick("slickPlay");
+    $(this).addClass("on");
+    $(this).siblings(".stop-btn").removeClass("on");
+  });
 
   // related-site
   $(".site-list li").click(function () {
@@ -39,7 +33,6 @@ $(function () {
 
   // 외부 영역 클릭 시 active 클래스 제거
   $(document).click(function (event) {
-    console.log(event.target.closest(".site-list"));
     if ($(event.target).closest(".site-list").length === 0) {
       $(".site-list li").children().removeClass("active");
     }

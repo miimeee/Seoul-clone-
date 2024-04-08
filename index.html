@@ -4,7 +4,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- jQuery -->
-    <script src="jquery-1.12.4.js"></script>
+    <script src="/js/jquery-1.12.4.js"></script>
+    <!-- slick.js -->
+    <script src="/js/slick/slick.min.js"></script>
+    <link rel="stylesheet" href="/js/slick/slick.css" />
+    <link rel="stylesheet" href="/js/slick/slick-theme.css" />
     <!-- CSS -->
     <link rel="stylesheet" href="style.css" />
     <!-- Favicon -->
@@ -118,20 +122,19 @@
     <!-- Main  -->
     <main>
       <section class="wrap">
-        
         <section class="main-issue">
           <!-- 주요뉴스 & 시민참여 -->
           <div class="issue-area">
             <div class="main-issue-slide01">
               <div class="issue-slide-title">
                 <h3>
-                <a href="#">
-                  <i></i>
-                  주요뉴스
-                </a>
-              </h3>
+                  <a href="#">
+                    <i></i>
+                    주요뉴스
+                  </a>
+                </h3>
               </div>
-              
+
               <div class="issue-slide-contents">
                 <div class="contents-wrap">
                   <div class="contents-wrap-inner">
@@ -167,11 +170,6 @@
                 <button class="contents-all-btn"></button>
               </div>
             </div>
-
-
-
-
-
           </div>
 
           <!-- 시장님소식 -->
@@ -692,12 +690,15 @@
             </div>
             <div class="slide-control-box">
               <div class="slide-count">
-                <span class="slide-number">0/0</span>
+                <span class="slide-number">
+                  <p>1</p>
+                / 7</span>
               </div>
               <div class="slide-btn">
-                <button class="prev-btn">p</button>
+                <button class="prev-btn"><</button>
                 <button class="stop-btn">||</button>
-                <button class="next-btn">n</button>
+                <button class="play-btn on">▶</button>
+                <button class="next-btn">></button>
               </div>
             </div>
           </div>

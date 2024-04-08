@@ -249,13 +249,17 @@ nav {
 .issue-slide01-title,
 .issue-slide02-title {
   float: left;
+  position: relative;
+  width: 80px;
+  height: 175px;
 }
 .issue-slide01-title h3,
 .issue-slide02-title h3 {
-  width: 80px;
-  height: 175px;
+  width: 100%;
+  height: 100%;
   background-color: #d2e1e9;
   position: absolute;
+  z-index: 100;
 }
 .issue-slide01-title h3 {
   top: 0;
@@ -270,10 +274,28 @@ nav {
   background-color: #0158a8;
 }
 
+.issue-slide01-title.active::after,
+.issue-slide02-title.active::after{
+  content: "";
+  width: 45px;
+  height: 45px;
+  background-color: #0158a8;
+  z-index: 1;
+  position: absolute;
+}
+.issue-slide01-title.active::after{
+  top: 50%;
+  left: 55px;
+  transform: translateY(-50%) rotate(45deg);
+}
+.issue-slide02-title.active::after{
+  top: 265px;
+  left: 55px;
+  transform: translateY(-50%) rotate(45deg);
+}
 .issue-slide01-title h3 a,
 .issue-slide02-title h3 a {
-  border: 1px solid #000;
-  color: #fff;
+  color: #000;
   font-size: 14px;
   font-weight: 600;
   display: inline-block;
@@ -282,15 +304,21 @@ nav {
   text-align: center;
   padding-top: 50px;
 }
+.issue-slide01-title.active h3 a,
+.issue-slide02-title.active h3 a{
+  color: #fff;
+}
 .issue-slide01-title h3 a i,
 .issue-slide02-title h3 a i {
   display: block;
   width: 50px;
   height: 50px;
   border-radius: 50%;
+  margin: 0 auto 8px;
+}
+.issue-slide01-title h3 a i {
   background: #fff url(/images/icon_main_2019\ 1.png) no-repeat;
   background-size: cover;
-  margin: 0 auto 8px;
 }
 .issue-slide02-title h3 a i {
   background: #fff url(/images/icon_main_2019\ 2.png) no-repeat;
@@ -301,6 +329,12 @@ nav {
 .issue-slide02-contents {
   margin-left: 80px;
 }
+.issue-slide01-contents.active,
+.issue-slide02-contents.active{
+  opacity: 0;
+}
+
+
 .contents-wrap {
 }
 .contents-wrap-inner {

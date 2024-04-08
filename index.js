@@ -1,4 +1,14 @@
 $(function () {
+  // 주요뉴스 & 시민참여
+  $(".issue-slide01-title").click(function(){
+    $(this).parent().addClass("active")
+    $(this).parent().siblings(".main-issue-slide02").removeClass("active")
+  })
+  $(".issue-slide02-title").click(function(){
+    $(this).parent().addClass("active")
+    $(this).parent().siblings(".main-issue-slide01").removeClass("active")
+  })
+
   // 슬라이드 배너
   $(".slide-images").slick({
     slidesToShow: 3,

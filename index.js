@@ -1,5 +1,5 @@
 $(function () {
-  // 주요뉴스 & 시민참여
+  // 주요뉴스 & 시민참여 변경구간
   $(".issue-slide01-title").click(function(){
     $(this).parent().addClass("active")
     $(this).parent().siblings(".main-issue-slide02").removeClass("active")
@@ -7,6 +7,14 @@ $(function () {
   $(".issue-slide02-title").click(function(){
     $(this).parent().addClass("active")
     $(this).parent().siblings(".main-issue-slide01").removeClass("active")
+  })
+
+  // 주요뉴스 & 시민참여 슬라이드
+  $(".contents-wrap-inner ul").slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 2500,
   })
 
   // 슬라이드 배너
